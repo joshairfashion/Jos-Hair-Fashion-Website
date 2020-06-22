@@ -1,0 +1,855 @@
+        @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;800&display=swap');
+        /* CSS Reset*/
+        
+        a,
+        abbr,
+        acronym,
+        address,
+        applet,
+        article,
+        aside,
+        audio,
+        b,
+        big,
+        blockquote,
+        body,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        embed,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        i,
+        iframe,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        object,
+        ol,
+        output,
+        p,
+        pre,
+        q,
+        ruby,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline
+        }
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+        
+        body {
+            line-height: 1
+        }
+        
+        ol,
+        ul {
+            list-style: none
+        }
+        
+        blockquote,
+        q {
+            quotes: none
+        }
+        
+        blockquote:after,
+        blockquote:before,
+        q:after,
+        q:before {
+            content: '';
+            content: none
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+        /* CSS Reset Ends*/
+        
+        html {
+            text-decoration: none;
+            font-family: 'Muli', sans-serif;
+            font-size: 62.5%;
+            background: #343434;
+            width: 100vw;
+            color: #343434;
+        }
+        
+        html,
+        body {
+            overflow-x: hidden;
+            margin: 0;
+        }
+        
+        .wrapper {
+            max-width: 144rem;
+            margin: 0 auto;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+        
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -14rem;
+            visibility: hidden;
+        }
+        
+        .hover:hover {
+            text-decoration: underline;
+            color: #C67B7E;
+        }
+        
+        span {
+            display: none;
+        }
+        /*FONTS*/
+        
+        h1 {
+            font-weight: 800;
+            font-size: 8rem;
+            line-height: 10rem;
+            text-transform: uppercase;
+        }
+        
+        h2 {
+            font-weight: 400;
+            font-size: 4rem;
+            line-height: 5rem;
+            text-transform: uppercase;
+        }
+        
+        h3 {
+            font-weight: 800;
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            padding: 6rem 0 0 0;
+        }
+        
+        h4 {
+            font-weight: 600;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+        
+        h5 {
+            font-weight: 800;
+            font-size: 2.8rem;
+            line-height: 3.2rem;
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .caption {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            padding-top: 1rem;
+        }
+        /* NAV BAR */
+        
+        nav {
+            position: fixed;
+            width: 100%;
+            height: 14rem;
+            left: 0px;
+            top: 0px;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-evenly;
+            z-index: 999;
+        }
+        
+        .navbar {
+            transition: background-color 200ms linear;
+        }
+        
+        .navbar.nav-colored {
+            background-color: #343434 !important;
+            transition: background-color 200ms linear;
+        }
+        
+        nav .logo {
+            position: relative;
+            width: 12rem;
+            height: 12rem;
+            margin-top: 1rem;
+            display: block;
+            background-image: url(../images/logo.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: contain;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin: 5.5rem 4.5rem 0 0;
+            color: white;
+        }
+        
+        nav ul li:last-child {
+            margin: 5.5rem 0 0 0;
+        }
+        
+        nav ul li:hover {
+            color: #C67B7E;
+            text-decoration: underline;
+        }
+        
+        .nav-insta {
+            height: 3rem;
+            width: 3rem;
+            display: inline-block;
+            background-image: url(../images/icons/insta-white.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .nav-fb {
+            height: 3rem;
+            width: 3rem;
+            display: inline-block;
+            background-image: url(../images/icons/fb-white.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+            margin: 0 2rem 0 0;
+        }
+        
+        .nav-insta:hover {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/insta-green.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .nav-fb:hover {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/fb-green.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        nav .social-icons {
+            margin-top: 5.5rem;
+        }
+        
+        nav .menu-toggle {
+            margin-top: 5.5rem;
+        }
+        
+        .menu-toggle {
+            display: none;
+        }
+        
+        button {
+            background: transparent;
+            border: solid 0 transparent;
+            padding: 0;
+            height: 3rem;
+            width: 3rem;
+        }
+        
+        .hide {
+            display: none;
+            visibility: hidden;
+        }
+        
+        .open-menu {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/menu.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .close-menu {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/close.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        /* Home */
+        
+        .home-container {
+            max-width: 100%;
+            height: 70rem;
+            background-image: url(../images/background-image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 14rem;
+            color: white;
+        }
+        
+        .home {
+            max-width: 144rem;
+            margin: 0 auto;
+            height: auto;
+        }
+        
+        .home h2 {
+            max-width: 76.1rem;
+            position: relative;
+            top: 25rem;
+            margin: 0 3.5rem;
+        }
+        
+        .home h1 {
+            max-width: 80rem;
+            position: relative;
+            top: 25rem;
+            margin: 0 3.5rem;
+        }
+        /* CTA */
+        
+        .cta-container {
+            max-width: 100%;
+            height: 14rem;
+            background: #EFD5D6;
+            color: white;
+        }
+        
+        .cta {
+            width: 80%;
+            height: 14rem;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #343434;
+        }
+        
+        .button {
+            text-align: center;
+            width: 24.2rem;
+            height: 3.2rem;
+            padding: 1.5rem 2.5rem;
+            border: 3px solid #343434;
+            border-radius: 1rem;
+            letter-spacing: 0.015em;
+            margin: 0 2rem;
+        }
+        
+        .button:hover {
+            color: #C67B7E;
+            border: 3px solid white;
+            background: white;
+        }
+        /* Services */
+        
+        .services-container {
+            background: #FDF9F9;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .services {
+            max-width: 144rem;
+            margin: 0 auto 5rem auto;
+        }
+        
+        .watermark {
+            z-index: 1;
+            background-image: url(../images/watermark.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 85rem;
+            height: 85rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-right: -50%;
+            opacity: 100%;
+     transform: translate(-50%, -50%) 
+        
+        }
+        
+        .services-content {
+            max-width: 100rem;
+            margin: 3rem auto 3rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            z-index: 995;
+        }
+        
+        .services h4 {
+            color: #C67B7E;
+            margin-bottom: 1rem;
+        }
+        
+        .services table {
+            width: 35rem;
+            font-size: 2rem;
+            line-height: 3.2rem;
+            margin-top: 1rem;
+        }
+        
+        .service-section {
+            margin: 2rem 3rem;
+        }
+        
+        .services table td:nth-child(2n+0) {
+            text-align: right;
+            font-weight: 700;
+        }
+        
+        .womens {
+            order: 1;
+        }
+        
+        .colour {
+            order: 2;
+        }
+        
+        .mens {
+            order: 4;
+        }
+        
+        .style {
+            order: 3;
+        }
+        
+        .perm {
+            order: 6;
+        }
+        
+        .kids {
+            order: 5;
+        }
+        
+        .captions {
+            order: 7;
+        }
+        /* Contact */
+        
+        .contact-container {
+            background: white;
+        }
+        
+        .contact {
+            max-width: 144rem;
+            margin: 0 auto;
+        }
+        
+        .contact p {
+            margin: 2rem auto;
+        }
+        
+        .contact-summary {
+            max-width: 60%;
+        }
+        
+        .map {
+            overflow: hidden;
+            width: 45rem;
+            height: 35rem;
+            border-radius: 2rem;
+            margin: 0 5rem;
+        }
+        
+        .contact-content {
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap-reverse;
+            margin: 6rem auto 0 auto;
+            justify-content: center;
+            margin: 5rem 2rem 2rem 2rem;
+            padding-bottom: 12rem;
+        }
+        
+        .contact-content p:first-child {
+            margin: 1rem 0 0 0;
+        }
+        
+        .contact-content p {
+            margin: .5rem 0;
+        }
+        
+        .contact-content .social-icons {
+            margin-top: 1.5rem;
+        }
+        
+        .contact-info {
+            margin-bottom: 7.8rem;
+        }
+        
+        .insta {
+            height: 3rem;
+            width: 3rem;
+            display: inline-block;
+            background-image: url(../images/icons/insta-grey.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .fb {
+            height: 3rem;
+            width: 3rem;
+            display: inline-block;
+            background-image: url(../images/icons/fb-grey.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+            margin: 0 2rem 0 0;
+        }
+        
+        .insta:hover {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/insta-green.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .fb:hover {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/fb-green.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        /* Footer */
+        
+        footer {
+            width: 100%;
+            background: #343434;
+            color: white;
+        }
+        
+        .footer-content {
+            max-width: 90rem;
+            margin: 0 auto;
+            padding: 5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .footer-content .logo {
+            width: 20rem;
+            height: 20rem;
+            display: block;
+            background-image: url(../images/logo.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .footer-content .footer-info p:first-of-type {
+            margin: 1rem 0 0 0;
+        }
+        
+        .footer-content p {
+            margin: .5rem 0;
+        }
+        
+        .footer-content .social-icons {
+            margin-top: 1.5rem;
+        }
+        
+        .footer-info {
+            padding: 1.8rem 3.5rem;
+            width: 30rem;
+        }
+        
+        .footer-insta {
+            height: 3rem;
+            width: 3rem;
+            display: inline-block;
+            background-image: url(../images/icons/insta-white.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .footer-fb {
+            height: 3rem;
+            width: 3rem;
+            display: inline-block;
+            background-image: url(../images/icons/fb-white.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+            margin: 0 2rem 0 0;
+        }
+        
+        .footer-insta:hover {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/insta-green.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .footer-fb:hover {
+            height: 3rem;
+            width: 3rem;
+            background-image: url(../images/icons/fb-green.svg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .hours-table {
+            width: 22rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin: 1.8rem 0 0 5rem;
+        }
+        
+        footer table {
+            margin-top: .5rem;
+            width: 22rem;
+        }
+        
+        footer table tr {
+            height: 2.4rem;
+        }
+        
+        footer table td:nth-child(2n+0) {
+            font-weight: 600;
+            text-align: right;
+        }
+        /* MEDIA QUERIES*/
+        
+        @media screen and (max-width: 1100px) {
+            .cta {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .home-container {
+                background-image: url(../images/Banner-1100.jpg);
+            }
+        }
+        
+        @media screen and (max-width: 990px) {
+            .cta-container {
+                height: 20rem;
+            }
+            .cta {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                padding: 3rem auto;
+                height: 20rem;
+                margin: 0 auto;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .navbar {
+                justify-content: space-between;
+            }
+            nav ul {
+                display: none;
+            }
+            nav .social-icons {
+                display: none;
+            }
+            nav .logo {
+                margin-left: 6rem;
+            }
+            .menu-toggle {
+                display: block;
+                justify-self: flex-end;
+                margin-right: 6rem;
+            }
+            .mobile-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding-top: 20rem;
+                width: 100vw;
+                height: 100%;
+                background: #343434;
+                z-index: 998;
+                display: block;
+            }
+            .mobile-menu-content {
+                text-align: center;
+            }
+            .mobile-menu ul {
+                display: block;
+                color: white;
+                font-weight: 700;
+                font-size: 3rem;
+                line-height: 3rem;
+                text-transform: uppercase;
+            }
+            .away {
+                transform: translate(100vw);
+                display: none;
+            }
+            .mobile-menu ul li {
+                margin: 3rem 0;
+            }
+            .home-container {
+                background-image: url(../images/Banner-900.jpg);
+            }
+            .footer-content {
+                width: 100%;
+                margin: 0 auto;
+                padding: 5rem 0;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer-info {
+                padding: 3rem 0;
+                text-align: center;
+            }
+            footer table {
+                width: 30rem;
+            }
+            .hours-table {
+                margin-left: 0;
+                width: 30rem;
+            }
+            .contact-info {
+                text-align: center;
+                align-self: center;
+            }
+            .map {
+                margin: 0;
+            }
+            .contact-content {
+                display: flex;
+                flex-direction: column-reverse;
+                flex-wrap: wrap-reverse;
+            }
+            .watermark{
+                display: none;
+            }
+            .hours-table h4{
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width:826px) {
+            .services-content{
+                max-width: 60%;
+            }
+}
+
+        @media screen and (max-width:600px) {
+            .map {
+                overflow: hidden;
+                width: 30rem;
+                height: 25rem;
+                border-radius: 2rem;
+            }
+            .home-container {
+                background-image: url(../images/Banner-600.jpg);
+            }
+            .button {
+
+            padding: 1rem 1.5rem;
+            border: 3px solid white;
+            margin: 0 2rem 1rem 2rem;
+        }
+        }
+        
+        @media screen and (max-width: 400px) {
+            h1 {
+                font-size: 6rem;
+                line-height: 7.2rem;
+            }
+            .caption {
+                text-align: center;
+            }
+            .contact-content {
+                width: 90%;
+            }
+            .home-container {
+                background-image: url(../images/Banner-400.jpg);
+            }
+        }
+        
+        @media screen and (min-width: 900px) {
+            .mobile-menu {
+                display: none;
+            }
+        }

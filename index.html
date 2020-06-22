@@ -1,35 +1,304 @@
 <!doctype html>
-<html id="index-background">
+<html>
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>Home | Jo's Hair Fashion &amp; Aesthetic</title>
-    <link rel="stylesheet" href="css/styles2.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Jo's Hair Fashion">
+    <meta name="description" content="Premier hair salon in Welland, Ontario">
+    <meta name="keywords" content="Niagara Hair, Niagara Hair Salon, Welland Hair, Welland Hair Salon, Fonthill Hair, Fonthill Hair Salon, Niagara Hairdresser, Welland Hair Dresser, Welland Barber, Niagara Barber, Hairstyle, Jo's Hair Fashion, hair, haircut, Thorold hair salon, Thorold hair dresser, thorold barber">
+    <title>Jo's Hair Fashion</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <!--[if lt IE 9]>
             <script src="js/html5shiv.min.js"></script>
             <![endif]-->
-
 </head>
 <!--- Github--->
-<body id="wrapper">
+
+<body>
     <header>
-        <h5 class="index-logo"><a href="index.html"><span class="hide">Jo's Hair Fashion &amp; Aesthetic</span></a></h5>
+        <nav class="navbar">
+            <div class="logo"><span>Jo's Hair Fashion</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Jos-Hair-Fashion-Aesthetics-145171162248846/?fref=ts">
+                    <div class="nav-fb"> </div>
+                </a>
+                <a href="https://www.instagram.com/joshairfashion/">
+                    <div class="nav-insta"> </div>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <button id="open-menu" type="button">
+                        <a class="hamburger-icon" aria-label="Expand Menu">
+                            <div class="open-menu"> </div>
+                        </a>
+                    </button>
+                    <button id="close-menu" class="hide" type="button">
+                        <a class="close-icon" aria-label="Collapse Menu">
+                            <div class="close-menu"> </div>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <nav class="index-nav">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <footer class="sticky-footer">
-        <p class="social"> <a href="https://www.facebook.com/Jos-Hair-Fashion-Aesthetics-145171162248846/?fref=ts">f</a> <a href="https://www.instagram.com/joshair_/">i</a></p>
-        <p class="copywrite">&copy; Jo's Hair Fashion &amp; Aesthetics</p>
+    <div id="mobile-menu" class="mobile-menu away">
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Jos-Hair-Fashion-Aesthetics-145171162248846/?fref=ts">
+                    <div class="nav-fb"> </div>
+                </a>
+                <a href="https://www.instagram.com/joshairfashion/">
+                    <div class="nav-insta"> </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="home-container" id="home">
+            <div class="home">
+                <h2>Welcome to</h2>
+                <h1>Jo's Hair Fashion</h1></div>
+        </section>
+        <section class="cta-container">
+            <div class="cta">
+                <h4>Book an appointment with a member of our talented team today.</h4>
+                <a href="#contact">
+                    <div class="button">
+                        <h5>Contact Us</h5></div>
+                </a>
+            </div>
+        </section>
+        <section class="services-container">
+            <a class="anchor" id="services"></a>
+            <div class="services">
+                <h3 class="center">Services</h3>
+                <div class="services-content">
+                    <div class=" service-section womens">
+                        <h4 class=" center">Women's Cuts</h4>
+                        <table>
+                            <tr>
+                                <td>Cut</td>
+                                <td>&#36;23.00</td>
+                            </tr>
+                            <tr>
+                                <td>Wash and Cut</td>
+                                <td>&#36;26.00</td>
+                            </tr>
+                            <tr>
+                                <td>Cut and Style</td>
+                                <td>&#36;30.00</td>
+                            </tr>
+                            <tr>
+                                <td>Wash, Cut and Style</td>
+                                <td>&#36;34.00</td>
+                            </tr>
+                            <tr>
+                                <td>Wash and Style</td>
+                                <td>&#36;21.00</td>
+                            </tr>
+                            <tr>
+                                <td>Bangs</td>
+                                <td>&#36;7.00</td>
+                            </tr>
+                        </table>
+                        <div class="caption">Additional &#36;5 for long hair.</div>
+                    </div>
+                    <div class="service-section mens">
+                        <h4 class="center">Men's Cuts</h4>
+                        <table>
+                            <tr>
+                                <td>Cut</td>
+                                <td>&#36;18.00</td>
+                            </tr>
+                            <tr>
+                                <td>Wash and Cut</td>
+                                <td>&#36;20.00</td>
+                            </tr>
+                            <tr>
+                                <td>Cut and Beard</td>
+                                <td>&#36;25.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="service-section kids">
+                        <h4 class="center">Kids Cuts</h4>
+                        <table>
+                            <tr>
+                                <td>Under 7 </td>
+                                <td>&#36;17.00+</td>
+                            </tr>
+                        </table>
+                        <div class="caption">Additional &#36;5 with shampoo</div>
+                    </div>
+                    <div class="service-section style">
+                        <h4 class="center">Style</h4>
+                        <table>
+                            <tr>
+                                <td>Wash and Style</td>
+                                <td>&#36;21.00+</td>
+                            </tr>
+                            <tr>
+                                <td>Updo</td>
+                                <td>&#36;45.00+</td>
+                            </tr>
+                            <tr>
+                                <td>Braiding</td>
+                                <td>&#36;20.00+</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="service-section colour">
+                        <h4 class="center">Colour</h4>
+                        <table>
+                            <tr>
+                                <td>Highlights &#40;Cap&#41;</td>
+                                <td>&#36;68.00</td>
+                            </tr>
+                            <tr>
+                                <td>Foils</td>
+                                <td>&#36;4.00 /foil</td>
+                            </tr>
+                            <tr>
+                                <td>Full Head</td>
+                                <td>&#36;110.00</td>
+                            </tr>
+                            <tr>
+                                <td>Colour</td>
+                                <td>&#36;47.00</td>
+                            </tr>
+                            <tr>
+                                <td>Colour and Cut</td>
+                                <td>&#36;70.00</td>
+                            </tr>
+                            <tr>
+                                <td>Balayage</td>
+                                <td>&#36;120.00+</td>
+                            </tr>
+                        </table>
+                        <div class="caption">
+                            <ul>
+                                <li>Additional &#36;10 for any colour remix</li>
+                                <li>Prices do not include cut unless indicated</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-section perm">
+                        <h4 class="center">Perm</h4>
+                        <table>
+                            <tr>
+                                <td>Short Hair</td>
+                                <td>&#36;70.00+</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="caption captions center">
+                        <ul>
+                            <li>&#42; Seniors discount available &#40;65 years&#41;</li>
+                            <li>&#42;&#42; Consultation recommended</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="watermark"><span>JHF Watermark</span></div>
+        </section>
+        <section class="contact-container">
+            <a class="anchor" id="contact"></a>
+            <div class="contact">
+                <h3 class="center">Contact</h3>
+                <p class="center contact-summary">If you are interested in booking an appointment with one of our stylists, please give us a call! For all other inquiries please contact us by phone, email or social media.</p>
+                <div class="contact-content">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848.438939112183!2d-79.27128329824082!3d43.004112192073485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d349968146f079%3A0x31b945589ca963ad!2sJo&#39;s%20Hair%20Fashion%20%26%20Aesthetics!5e0!3m2!1sen!2sca!4v1591661733744!5m2!1sen!2sca" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Jo's Hair Fashion</h4>
+                        <p>308 Thorold Rd  Welland, Ont.</p>
+                        <p>(905) 735-9476</p>
+                        <a class="hover" href="mailto: joshairfashion308@gmail.com">
+                            <p>joshairfashion308@gmail.com</p>
+                        </a>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/Jos-Hair-Fashion-Aesthetics-145171162248846/?fref=ts">
+                                <div class="fb"> </div>
+                            </a>
+                            <a href="https://www.instagram.com/joshairfashion/">
+                                <div class="insta"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo"><span>Jo's Hair Fashion</span></div>
+            <div class="footer-info">
+                <h4>Jo's Hair Fashion</h4>
+                <p>308 Thorold Rd  Welland, Ont.</p>
+                <p>(905) 735-9476</p>
+                <a class="hover" href="mailto: joshairfashion308@gmail.com">
+                    <p>joshairfashion308@gmail.com</p>
+                </a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Jos-Hair-Fashion-Aesthetics-145171162248846/?fref=ts">
+                        <div class="footer-fb"> </div>
+                    </a>
+                    <a href="https://www.instagram.com/joshairfashion/">
+                        <div class="footer-insta"> </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hours-table">
+                <h4>Hours</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9am - 6pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9am - 6pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9am - 6pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9am - 3pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 </html>
