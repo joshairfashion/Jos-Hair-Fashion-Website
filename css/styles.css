@@ -471,10 +471,24 @@
             margin: 2rem 3rem;
         }
         
-        .services table td:nth-child(2n+0) {
-            text-align: right;
-            font-weight: 700;
+.services table td{
+    text-align: right;
+    font-weight: 700;
+}
+
+.services table th{
+    font-weight: 700;
+    
+}
+
+       .services table td:first-of-type {
+            text-align: left;
+            font-weight: 500;
         }
+.services table td:nth-child(1n+2){
+    
+    padding-left: .5rem;
+}
         
         .womens {
             order: 1;
@@ -499,9 +513,13 @@
         .kids {
             order: 5;
         }
+
+.olaplex{
+    order: 7;
+}
         
         .captions {
-            order: 7;
+            order: 8;
         }
         /* Contact */
         
