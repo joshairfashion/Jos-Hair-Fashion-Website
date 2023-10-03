@@ -450,6 +450,8 @@
             margin: 3rem auto 3rem auto;
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
             justify-content: center;
             position: relative;
             z-index: 995;
@@ -477,20 +479,23 @@
 }
 
 .services table th{
-    font-weight: 700;
+    font-weight: 600;
+    text-align: left;
     
 }
-
-       .services table td:first-of-type {
+.services table td:first-of-type {
             text-align: left;
             font-weight: 500;
+        }
+.services .products table td:first-of-type{
+            text-align: center;
         }
 .services table td:nth-child(1n+2){
     
     padding-left: .5rem;
 }
         
-        .womens {
+     /*   .womens {
             order: 1;
         }
         
@@ -512,7 +517,7 @@
         
         .kids {
             order: 5;
-        }
+        } 
 
 .olaplex{
     order: 7;
@@ -520,7 +525,7 @@
         
         .captions {
             order: 8;
-        }
+        }*/
         /* Contact */
         
         .contact-container {
